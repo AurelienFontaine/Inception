@@ -28,6 +28,7 @@ L'infrastructure contiend les services suivants :
   - Démarrage des containers avec une boucle infinie (`tail -f`, `sleep infinity`, `while true`, etc.).
   - Utilisation du tag `latest`.
   - Inclusion de mots de passe en dur dans les Dockerfiles.
+  <br>
 - Les containers redémarrent automatiquement en cas de crash.
 - Utilisation des **variables d'environnement** avec un fichier `.env`.
 - Utilisation de **Docker secrets** pour les informations sensibles.
@@ -35,7 +36,7 @@ L'infrastructure contiend les services suivants :
 ## Déploiement
 1. Cloner le dépôt :
    ```sh
-   git clone https://github.com/votre-repo/inception.git
+   git clone https://github.com/mon-repo/inception.git
    cd inception
    ```
 2. Construire et démarrer les containers :
@@ -48,12 +49,12 @@ L'infrastructure contiend les services suivants :
    ```
 
 ## Configuration du Nom de Domaine
-- Notre domaine pointer vers notre **adresse IP locale**.
-- Format : `afontain.42.fr`.
+- Notre domaine pointe vers notre **adresse IP locale**.
+- Format : `afontain.42.fr`
 - La configuration DNS est mise en place pour permettre cette redirection.
 
 ## Structure des Volumes
-Les volumes doivent sont stockés sous :
+Les volumes sont stockés sous :
 ```
 /home/afontain/data/
    ├── database/      # Base de données WordPress
